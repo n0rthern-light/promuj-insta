@@ -1,6 +1,6 @@
 body {
   font-family: 'Hind', sans-serif;
-  font-size: 1.5em;
+  font-size: 2.5em;
 }
 
 p {
@@ -32,7 +32,7 @@ p {
   top:        0; 
   left:       0; 
   position:   fixed;
-  font-size: 1.6em;
+  font-size: 1.1em;
 
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;

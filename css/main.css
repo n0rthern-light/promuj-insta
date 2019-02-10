@@ -1,5 +1,6 @@
 body {
   font-family: 'PT Sans', sans-serif;
+  font-size: 1.5em;
 }
 
 .enlarged_bolded_text {
@@ -8,29 +9,57 @@ body {
 }
 
 .instagram_color {
-  background-color: #c32aa3;
-  border: none;
+  background-color: #4c5fd7;
+  border: 10px rgba(255,255,255,0.1) solid;
+  padding: 30px;
 }
 
 .instagram_color:hover {
   background-color: #7232bd;
+  border: 10px rgba(255,255,255,0.1) solid;
 }
 
 #heroimage {
-  background: white;
+  background: url('https://fischerinstitute.com/wp-content/uploads/2013/05/instagram-background.jpg');
   width:      100%;
   height:     100%; 
   z-index:    9999;
   top:        0; 
   left:       0; 
   position:   fixed;
+  font-size: 1.6em;
+
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-position: center;
+  background-size: cover;
 }
 
 #heroimage_content {
+  color: white;
   text-align: center;
-  width: 80%;
-  margin: 33vh auto 0 auto;
-  max-width: 768px;
+  width: 90%;
+  margin: 25vh auto 0 auto;
+  max-width: 1024px;
+  display: none;
+}
+
+#heroimage_instagram {
+  width: 60%;
+  margin: 20px auto;
+}
+
+.heroimage_instagram_animation {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  width: 200px;
+  display: inline-block;
+}
+
+.insta_number {
+  margin-left: 10px;
+  font-family: 'Varela Round', sans-serif;
 }
 
 #content {

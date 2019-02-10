@@ -28,9 +28,6 @@
     
       <div class="collapse navbar-collapse" id="navbarColor03">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
               <li class="nav-item">
                   <a class="nav-link" href="#">Regulamin</a>
               </li>
@@ -44,7 +41,7 @@
 
   <main>
     <div id="heroimage">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
             <a class="navbar-brand enlarged_bolded_text" href="#">Promuj-Insta.pl</a>
             <button style="border:none;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -52,9 +49,6 @@
           
             <div class="collapse navbar-collapse" id="navbarColor03">
               <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Regulamin</a>
                 </li>
@@ -66,33 +60,20 @@
           </nav>
       <div id="heroimage_content">
         <h1>Promuj-Insta.pl</h1>
+          <div id="heroimage_instagram">
+            <div class="heroimage_instagram_animation">
+              <i class="fa fa-heart"></i><span id="likes" class="insta_number">0</span>
+            </div>
+            <div class="heroimage_instagram_animation">
+              <i class="fa fa-users"></i><span id="followers" class="insta_number">0</span>
+            </div>
+          </div>
         <p>Automatyczne zdobywanie nowych followersów.</p>
         <hr></hr>
         <button id="start_btn" type="button" class="btn btn-primary instagram_color"><i class="fa fa-instagram" style="font-size: 1.1em;"></i> Zaloguj się przez Instagram aby rozpocząć</button>
       </div>
     </div>
     <div id="content" style="background-color: white;">
-      <p>
-        Lorem ipsum lorem pap lala la fdlsa kfldsa fdsalk fldsa fkldas
-      </p>
-      <p>
-        Lorem ipsum lorem pap lala la fdlsa kfldsa fdsalk fldsa fkldas
-      </p>
-      <p>
-        Lorem ipsum lorem pap lala la fdlsa kfldsa fdsalk fldsa fkldas
-      </p>
-      <p>
-        Lorem ipsum lorem pap lala la fdlsa kfldsa fdsalk fldsa fkldas
-      </p>
-      <p>
-        Lorem ipsum lorem pap lala la fdlsa kfldsa fdsalk fldsa fkldas
-      </p>
-      <p>
-        Lorem ipsum lorem pap lala la fdlsa kfldsa fdsalk fldsa fkldas
-      </p>
-      <p>
-        Lorem ipsum lorem pap lala la fdlsa kfldsa fdsalk fldsa fkldas
-      </p>
     </div>
   </main>
 
@@ -107,6 +88,7 @@
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

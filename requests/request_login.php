@@ -18,11 +18,11 @@ $options = array(
 );
 $context  = stream_context_create($options);
 $result = file_get_contents($url, false, $context);
-if ($result === FALSE) { echo 'e:Bład serwera, proszę zgłoś to na email: support@promuj-insta.pl'; return; }
-echo $result;
 
+$decoded = json_decode($result, true);
 
-
-
+if(strcmp($decoded['status'], "ok") === 0){
+  echo json_encode($decoded['user']);
+}
 
 ?>

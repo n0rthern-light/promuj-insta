@@ -27,13 +27,12 @@ p {
 #heroimage {
   background: url('https://fischerinstitute.com/wp-content/uploads/2013/05/instagram-background.jpg');
   width:      100%;
-  height:     100%; 
+  height:     100%;
   z-index:    9999;
   top:        0; 
   left:       0; 
   position:   fixed;
   font-size: 1.1em;
-
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   background-position: center;
@@ -88,6 +87,7 @@ p {
 }
 
 #start_btn {
+  margin-top: 25px;
   display: none;
 }
 

@@ -18,11 +18,24 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
     
 
   console.log('isMobile: '+isMobile);
+
+  var properties = {
+    paddingTop:    '18px',
+    paddingBottom: '18px'
+ };
+
+ var el = $('#start_btn');
+
+ el.pulse(properties, {duration : 1000, pulses : 3});
+  
+
   $('#start_btn').click(function(){
     $('#heroimage').fadeOut();
   });
 
   $('#heroimage_content').fadeIn();
+    $('#start_btn').fadeIn();
+    $('.heroimage_instagram_animation').fadeTo(600, 1.0);
 
   var random_start_likes = getRandomArbitrary(0, 2000);
   var random_start_followers = getRandomArbitrary(0, 500);
@@ -40,7 +53,7 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 
  $('#followers').delay(667).queue(function() {
 
-  $(this).animateNumber({ number: getRandomArbitrary(2000, 70000) });
+  $(this).animateNumber({ number: getRandomArbitrary(15000, 70000) });
 
   $(this).dequeue();
   });

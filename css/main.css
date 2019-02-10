@@ -69,6 +69,7 @@ p {
   margin: 0;
   width: 190px;
   display: inline-block;
+  opacity: 0;
 }
 
 .insta_number {
@@ -86,6 +87,26 @@ p {
   border: none;
 }
 
+#start_btn {
+  display: none;
+}
+
+#content form {
+  width: 90%;
+  max-width: 500px;
+  margin: 25vh auto 0 auto;
+}
+
+#content form legend {
+  margin-bottom: 35px;
+}
+
+#content form button {
+  width: 80%;
+  max-width: 500px;
+  margin-top: 50px;
+  font-weight: 300;
+}
 
 
 /*

@@ -11,8 +11,11 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
     isMobile = true;
 }
 
-  if(isMobile)
+  if(isMobile) {
     $('body').css('font-size', '2.5em');
+    $('.heroimage_instagram_animation').css('width', '250px');
+  }
+    
 
   console.log('isMobile: '+isMobile);
   $('#start_btn').click(function(){

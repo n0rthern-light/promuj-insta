@@ -59,4 +59,15 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
   });
 
 
+
+
+  $('#LoginBtn').click(function(e){
+    e.preventDefault();
+    console.log('im going to login');
+    $.post('requests/request_login.php', {login: $('#login').val(), password: $('#password').val() }, function(data){
+      alert(data);
+    })
+  });
+
+
 });

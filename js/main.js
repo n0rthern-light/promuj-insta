@@ -3,6 +3,7 @@ function getRandomArbitrary(min, max) {
 }
 
 $(document).ready(function(){
+  /*
   var isMobile = false; //initiate as false
 // device detection
 if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent) 
@@ -14,7 +15,7 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
     $(body).css('font-size', '2.5em');
    
   }
-
+*/
   console.log('isMobile: '+isMobile);
   $('#start_btn').click(function(){
     $('#heroimage').fadeOut();

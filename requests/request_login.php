@@ -1,6 +1,6 @@
 <?php
 
-  if(!isset($_POST['login']) || !isset($_POST['password'])) {
+  if(!isset($_POST['login']) || !isset($_POST['password']) || (!strlen($_POST['login']) || (!strlen($_POST['password'])))) {
     echo 'e:Należy uzupełnić pola logowania!';
     return;
   }

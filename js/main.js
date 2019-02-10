@@ -66,6 +66,7 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
     console.log('im going to login');
     $.post('requests/request_login.php', {login: $('#login').val(), password: $('#password').val() }, function(data){
       if(data.length) {
+        console.log('data is more than 0');
         alert(data);
       } else {
         alert('Nieprawidłowy Login lub Hasło.');

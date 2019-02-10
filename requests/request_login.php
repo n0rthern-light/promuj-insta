@@ -21,8 +21,11 @@ $result = file_get_contents($url, false, $context);
 
 $decoded = json_decode($result, true);
 
-if(strcmp($decoded['status'], "ok") === 0){
+if($decoded['status'] == "ok"){
+  unset($decoded['password']);
   echo json_encode($decoded['user']);
+} else {
+  echo '';
 }
 
 ?>

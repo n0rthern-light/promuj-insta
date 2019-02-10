@@ -1,6 +1,10 @@
 body {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Hind', sans-serif;
   font-size: 1.5em;
+}
+
+p {
+  font-family: 'Hind', sans-serif;
 }
 
 .enlarged_bolded_text {
@@ -12,6 +16,7 @@ body {
   background-color: #4c5fd7;
   border: 10px rgba(255,255,255,0.1) solid;
   padding: 30px;
+  font-weight: 300;
 }
 
 .instagram_color:hover {
@@ -35,6 +40,11 @@ body {
   background-size: cover;
 }
 
+.hero_big_title {
+  font-size: 3.0em;
+  font-weight: 800;
+}
+
 #heroimage_content {
   color: white;
   text-align: center;
@@ -42,6 +52,10 @@ body {
   margin: 25vh auto 0 auto;
   max-width: 1024px;
   display: none;
+}
+
+#heroimage_content p {
+  font-weight: 600;
 }
 
 #heroimage_instagram {

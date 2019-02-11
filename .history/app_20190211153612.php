@@ -50,9 +50,9 @@ print_r($_SESSION['user']);
     <div style="width: 80%; margin: 50px auto 0 auto;">
       <div class="alert alert-dismissible alert-success">
         <button type="button" class="close" data-dismiss="alert">&times;</button>
-        <strong>Brawo!</strong> Udało Ci się poprawnie zalogować do naszego panelu!<br/> Z powodu, że często zdaża się że Instagram blokuje logowanie na naszej stronie,
-         <br/><strong>Zapisz ten link do awaryjnego/szybkiego logowania:</strong><br/><span style="color: orange;"><?php echo 'http://promuj-insta.pl/panel.php?token='.hash_hmac('sha256', $_SESSION['user']['id'].$_SESSION['user']['password'], $key); ?></span><br/>
-          Pozwoli Ci się on się zalogować w momentach, gdy tradycyjna metoda nie zadziała. Wystarczy, że wkleisz go do przeglądarki!<br/>Powyższy link jest ważny do czasu zmiany twojego hasła instagram - wtedy potrzebne jest ponowne zalogowanie na naszej stronie (nie zmieniaj nazwy użytkownika na czas korzystania z naszych usług).<br/>
+        <strong>Brawo!</strong> Udało Ci się poprawnie zalogować do naszego panelu!<br/><span class="alert-link">Uwaga</span>: Z powodu, że często zdaża się że Instagram blokuje logowanie na naszej stronie,
+         <br/><strong>Zapisz ten awaryjny link do awaryjnego logowania:</strong><br/><span style="color: orange;"><?php echo 'http://promuj-insta.pl/panel.php?token='.hash_hmac('sha256', $_SESSION['user']['id'].$_SESSION['user']['password'], $key); ?></span><br/>
+          Pozwoli Ci się on się zalogować w momentach, gdy tradycyjna metoda nie zadziała. Wystarczy, że wkleisz go do przeglądarki!<br/><span class="alert-link">Uwaga 2</span>: Powyższy link jest ważny do czasu zmiany twojego hasła instagram (nie zmieniaj nazwy użytkownika na czas korzystania z naszych usług).<br/>
           <strong>To najważniejsze co musisz wiedzieć. Pozostaje Ci nic innego jak tylko wypromować swój Instagram!</strong>
       </div>
     </div>

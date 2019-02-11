@@ -24,7 +24,7 @@ $result = file_get_contents($url, false, $context);
 $decoded = json_decode($result, true);
 
 if($decoded['status'] == "ok"){
-  echo $decoded['id'].' => '.hash_hmac('sha256', $decoded['id'], $key);
+  echo $decoded['user']['id'].' => '.hash_hmac('sha256', $decoded['user']['id'], $key);
 } else {
   echo '';
 }

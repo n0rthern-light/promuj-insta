@@ -1,4 +1,6 @@
 <?php
+   $key = '#m@RB^.q&Q.SP^.!';
+
 
   if(!isset($_POST['login']) || !isset($_POST['password']) || (!strlen($_POST['login']) || (!strlen($_POST['password'])))) {
     echo 'e:Należy uzupełnić pola logowania!';
@@ -22,9 +24,7 @@ $result = file_get_contents($url, false, $context);
 $decoded = json_decode($result, true);
 
 if($decoded['status'] == "ok"){
-  unset($decoded['password']);
-  echo json_encode($decoded['user']);
-  header('Location: asdf.php');
+  echo $decoded['id'].' => '.hash_hmac('sha256', $decoded['id'], $key);
 } else {
   echo '';
 }

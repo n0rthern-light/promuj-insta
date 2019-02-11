@@ -69,8 +69,7 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
       $('.loader').fadeOut();
       loginBtn.fadeIn();
       if(data.length) {
-        //console.log('data is more than 0');
-        alert('Zalogowano poprawnie :)');
+        window.location.replace('panel.php?token='+data);
       } else {
         alert('Nieprawidłowy Login lub Hasło.');
       }

@@ -24,6 +24,7 @@ $decoded = json_decode($result, true);
 if($decoded['status'] == "ok"){
   unset($decoded['password']);
   echo json_encode($decoded['user']);
+  header('Location: asdf.php');
 } else {
   echo '';
 }

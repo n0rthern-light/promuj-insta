@@ -64,6 +64,6 @@ print_r($_SESSION['user']);
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-  <script src="panel/main.js?v=<?php echo gmdate('YmdHis'); ?>"></script>
+  <script src="panel/main.js?v=<?php gmdate('YmdHis'); ?>"></script>
 </body>
 </html>

@@ -23,9 +23,6 @@ if(strlen($result)) {
   $dec_res = json_decode($result, true);
   session_start();
   $_SESSION['logged_in'] = true;
-  $_SESSION['user'] = $dec_res;
-  header('Location: app.php');
-  die();
 } else {
   header('Location: index.html');
   die();

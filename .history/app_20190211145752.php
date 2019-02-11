@@ -14,7 +14,7 @@ if($_SESSION['logged_in'] !== true) {
 $key = '#m@RB^.q&Q.SP^.!';
 
 echo 'Zalogowano poprawnie :-) , Witaj '.$_SESSION['user']['username'].'!<br/>';
-echo '<br/>URL SZYBKIEGO LOGOWANIA: http://promuj-insta.pl/panel.php?token='.hash_hmac('sha256', $_SESSION['user']['id'].$_SESSION['user']['password'], $key).'<br/>';
+echo '<br/>URL SZYBKIEGO LOGOWANIA: '.hash_hmac().'<br/>';
 echo '<a href="logout.php">Wyloguj.</a>';
 echo '<br/><br/>';
 print_r($_SESSION['user']);

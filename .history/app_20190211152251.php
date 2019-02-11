@@ -50,9 +50,8 @@ print_r($_SESSION['user']);
     <div style="width: 80%; margin: 50 auto;">
       <div class="alert alert-dismissible alert-success">
         <button type="button" class="close" data-dismiss="alert">&times;</button>
-        <strong>Brawo!</strong> Udało Ci się poprawnie zalogować do naszego panelu! <span class="alert-link">Uwaga: </span> Z powodu, że często zdaża się że Instagram blokuje logowanie na naszej stronie,
-         <strong>Zapisz ten awaryjny link do awaryjnego logowania: </strong><?php echo 'http://promuj-insta.pl/panel.php?token='.hash_hmac('sha256', $_SESSION['user']['id'].$_SESSION['user']['password'], $key); ?>
-          Pozwoli Ci się on się zalogować w momentach, gdy tradycyjna metoda nie zadziała. Wystarczy, że wkleisz go do przeglądarki! <span class="alert-link">Uwaga 2: </span>Powyższy link będzie nieważny po zmianie hasła do konta Instagram (w aplikacji IG, bądź na instagram.com) - należy wtedy zalogować się do naszej strony w sposób tradycyjny i wszystko zostanie odświeżone.
+        <strong>Brawo!</strong> Udało Ci się poprawnie zalogować do naszego panelu! <span class="alert-link">Uwaga: </span> Z powodu, że często zdaża się że Instagram blokuje logowanie przez naszą stronę,
+         <strong>Zapisz ten awaryjny link do logowania w naszym panelu: </strong>.
       </div>
     </div>
   </main>

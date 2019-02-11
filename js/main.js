@@ -15,7 +15,6 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
     $('body').css('font-size', '2.5em');
     $('.heroimage_instagram_animation').css('width', '250px');
   }
-    
 
   console.log('isMobile: '+isMobile);
 
@@ -27,9 +26,8 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
  var el = $('#start_btn');
 
  el.pulse(properties, {duration : 1000, pulses : 3});
-  
 
-  $('#start_btn').click(function(){
+  $('#start_btn').click(function () {
     $('#heroimage').fadeOut();
   });
 

@@ -6,7 +6,7 @@
     echo 'e:Należy uzupełnić pola logowania!';
     return;
   }
-
+  
 $url = 'https://promuj-insta-backend.herokuapp.com/login_instagram';
 $data = array('login' => $_POST['login'], 'password' => $_POST['password']);
 
@@ -24,7 +24,7 @@ $result = file_get_contents($url, false, $context);
 $decoded = json_decode($result, true);
 
 if($decoded['status'] == "ok"){
-  echo hash_hmac('sha256', $decoded['user']['id'].$decoded['user']['password'].gmdate('h'), $key);
+  echo hash_hmac('sha256', $decoded['user']['id'].$decoded['user']['password'], $key);
 }
 
 ?>

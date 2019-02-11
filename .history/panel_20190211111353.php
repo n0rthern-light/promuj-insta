@@ -21,6 +21,4 @@ $result = file_get_contents($url, false, $context);
 
 $decoded_result = json_decode($result, true);
 
-print_r($decoded_result);
-
 ?>
